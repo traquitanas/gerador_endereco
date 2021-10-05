@@ -1,7 +1,9 @@
 [build-system]
 # https://setuptools.readthedocs.io/en/latest/setuptools.html#setup-cfg-only-projects
 requires = [
-  "setuptools >= 58",
-  "wheel"
+  "setuptools >= 52",
+  "wheel",
+  'requests',
+  'pycep_correios',
 ]
 build-backend = "setuptools.build_meta"
