@@ -1,0 +1,6 @@
+# https://packaging.python.org/guides/using-manifest-in/
+include LICENSES/*
+graft src
+graft tests
+global-exclude __pycache__
+global-exclude *.py[cod]
