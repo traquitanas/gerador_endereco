@@ -10,8 +10,8 @@ requirements = [
 ]
 
 setup(
-    name='gerador_endereco2', # qualquer nome
-    version='1.0.13',
+    name='gerador_endereco', # Nome (não precisa ser o nome do repositório, nem de qualquer pasta...)
+    version='1.0.0',
     author='Michel Metran',
     author_email='michelmetran@gmail.com',
     description='API para criação de endereços aleatórios em um município específico',
@@ -22,13 +22,6 @@ setup(
     packages=find_namespace_packages(
         where='my_package',
     ),
-    # package_dir={
-    #     'scripts': 'random_address',
-    # },
-    # include_package_data=True,
-    # package_data={
-    #     'myapp': ['data/*.txt'],
-    # },
     install_requires=requirements,
     keywords='python, endereço aleatório, address',
     classifiers=[
@@ -39,3 +32,11 @@ setup(
         'Intended Audience :: Developers',
     ],
 )
+
+# package_dir={
+#     'scripts': 'random_address',
+# },
+# include_package_data=True,
+# package_data={
+#     'myapp': ['data/*.txt'],
+# },
