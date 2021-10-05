@@ -78,8 +78,3 @@ def get_random_complete_address(cep):
     return end['endereco_completo']
 
 
-if __name__ == '__main__':
-    # Para testes apenas
-    listas = get_list_ceps_bairros(estado='sp', municipio='piracicaba')
-    end = get_random_complete_address(random.choice(listas[0]))
-    print(end)
