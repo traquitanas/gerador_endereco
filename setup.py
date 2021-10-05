@@ -3,14 +3,13 @@ from setuptools import setup, find_namespace_packages, find_packages
 with open('README.md', 'r') as f:
     long_description = f.read()
 
-
 requirements = [
     'pycep_correios>=5.0.0',
     'requests>=2.25.1',
 ]
 
 setup(
-    name='gerador_endereco', # Nome (não precisa ser o nome do repositório, nem de qualquer pasta...)
+    name='gerador_endereco',  # Nome (não precisa ser o nome do repositório, nem de qualquer pasta...)
     version='1.0.1',
     author='Michel Metran',
     author_email='michelmetran@gmail.com',
