@@ -1,2 +1,2 @@
-requests
-pycep_correios
+pycep_correios>=5.0.0
+requests>=2.25.1

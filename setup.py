@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup, find_namespace_packages
 
 
 with open('README.md', 'r') as f:
@@ -6,9 +6,8 @@ with open('README.md', 'r') as f:
 
 
 requirements = [
-    'random',
-    'requests',
-    'pycep_correios',
+    'pycep_correios>=5.0.0',
+    'requests>=2.25.1',
 ]
 
 setup(
@@ -20,12 +19,14 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/open-dsa/gerador_endereco',
-    packages=['gerador_endereco'],
-    package_dir={
-        'gerador_endereco': 'random_address',
-    },
+    packages=find_namespace_packages(
+        where=['gerador_endereco', 'gerador_endereco.*']
+    ),
+    # package_dir={
+    #     'gerador_endereco': 'random_address',
+    # },
     install_requires=requirements,
-    keywords='python endereço aleatório',
+    keywords='python, endereço aleatório, address',
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
