@@ -11,14 +11,14 @@ requirements = [
 
 setup(
     name='gerador_endereco',
-    version='1.0.2',
+    version='1.0.4',
     author='Michel Metran',
     author_email='michelmetran@gmail.com',
     description='API para criação de endereços aleatórios em um município específico',
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/open-dsa/gerador_endereco',
-    packages=['gerador_endereco'],
+    packages=find_packages(),
     # include_package_data=True,
     # package_data={
     #     'myapp': ['data/*.txt'],
