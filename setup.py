@@ -18,16 +18,16 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/open-dsa/gerador_endereco',
-    packages=find_packages(),
+    packages=['gerador_endereco'],
     # include_package_data=True,
     # package_data={
     #     'myapp': ['data/*.txt'],
     # },
     # packages=find_namespace_packages(
-    #     where='script',
+    #     where='gerador_endereco',
     # ),
     # package_dir={
-    #     'script': 'random_address',
+    #     'gerador_endereco': 'random_address',
     # },
     install_requires=requirements,
     keywords='python, endereço aleatório, address',
