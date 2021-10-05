@@ -18,13 +18,13 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/open-dsa/gerador_endereco',
-    packages=find_namespace_packages(
-        where='gerador_endereco',
-    ),
+    packages=find_packages(),
+    # packages=find_namespace_packages(
+    #     where='gerador_endereco',
+    # ),
     # package_dir={
     #     'scripts': 'random_address',
     # },
-    # packages=find_packages(),
     # include_package_data=True,
     # package_data={
     #     'myapp': ['data/*.txt'],
