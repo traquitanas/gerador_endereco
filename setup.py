@@ -11,7 +11,7 @@ requirements = [
 
 setup(
     name='gerador_endereco',
-    version='1.0.6',
+    version='1.0.7',
     author='Michel Metran',
     author_email='michelmetran@gmail.com',
     description='API para criação de endereços aleatórios em um município específico',
