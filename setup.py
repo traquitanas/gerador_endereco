@@ -11,7 +11,7 @@ requirements = [
 ]
 
 setup(
-    name='gerador_endereco',
+    name='gerador-endereco',
     version='1.0.0',
     author='Michel Metran',
     author_email='michelmetran@gmail.com',
@@ -20,10 +20,10 @@ setup(
     long_description_content_type='text/markdown',
     url='https://github.com/open-dsa/gerador_endereco',
     packages=find_namespace_packages(
-        where=['gerador_endereco', 'gerador_endereco.*']
+        where='script',
     ),
     # package_dir={
-    #     'gerador_endereco': 'random_address',
+    #     'script': 'random_address',
     # },
     install_requires=requirements,
     keywords='python, endereço aleatório, address',
