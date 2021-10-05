@@ -5,12 +5,12 @@ with open('README.md', 'r') as f:
 
 requirements = [
     'pycep_correios>=5.0.0',
-    'requests>=2.25.1',
+    'requests>=2.10.1',
 ]
 
 setup(
     name='gerador_endereco',  # Nome (não precisa ser o nome do repositório, nem de qualquer pasta...)
-    version='1.0.2',
+    version='1.0.3',
     author='Michel Metran',
     author_email='michelmetran@gmail.com',
     description='API para criação de endereços aleatórios em um município específico',
@@ -18,6 +18,7 @@ setup(
     long_description_content_type='text/markdown',
     url='https://github.com/open-dsa/gerador_endereco',
     packages=find_packages(),
+    py_modules=['gerador_endereco'],
     install_requires=requirements,
     keywords='python, endereço aleatório, address',
     classifiers=[
