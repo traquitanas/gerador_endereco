@@ -10,18 +10,18 @@ requirements = [
 ]
 
 setup(
-    name='gerador_endereco2',
-    version='1.0.12',
+    name='gerador_endereco2', # qualquer nome
+    version='1.0.13',
     author='Michel Metran',
     author_email='michelmetran@gmail.com',
     description='API para criação de endereços aleatórios em um município específico',
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/open-dsa/gerador_endereco',
-    packages=find_packages(),
-    # packages=find_namespace_packages(
-    #     where='gerador_endereco',
-    # ),
+    # packages=find_packages(),
+    packages=find_namespace_packages(
+        where='my_package',
+    ),
     # package_dir={
     #     'scripts': 'random_address',
     # },
