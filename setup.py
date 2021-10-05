@@ -10,7 +10,7 @@ requirements = [
 
 setup(
     name='gerador_endereco',  # Nome (não precisa ser o nome do repositório, nem de qualquer pasta...)
-    version='1.0.3',
+    version='1.0.4',
     author='Michel Metran',
     author_email='michelmetran@gmail.com',
     description='API para criação de endereços aleatórios em um município específico',
@@ -18,7 +18,6 @@ setup(
     long_description_content_type='text/markdown',
     url='https://github.com/open-dsa/gerador_endereco',
     packages=find_packages(),
-    py_modules=['gerador_endereco'],
     install_requires=requirements,
     keywords='python, endereço aleatório, address',
     classifiers=[
@@ -37,3 +36,4 @@ setup(
 # package_data={
 #     'myapp': ['data/*.txt'],
 # },
+# py_modules=['gerador_endereco'],
