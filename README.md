@@ -7,7 +7,7 @@ Programa para gerar endereços aleatórios d'um município para popular um banco
 ### Instalar
 
 ```python
-pip install Endereços - Aleatórios
+pip install git+https://github.com/open-dsa/gerador_endereco.git
 ```
 
 ### Como usar?
