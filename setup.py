@@ -10,7 +10,7 @@ requirements = [
 ]
 
 setup(
-    name='gerador-endereco',
+    name='gerador_endereco',
     version='1.0.0',
     author='Michel Metran',
     author_email='michelmetran@gmail.com',
@@ -19,6 +19,10 @@ setup(
     long_description_content_type='text/markdown',
     url='https://github.com/open-dsa/gerador_endereco',
     packages=find_packages(),
+    # include_package_data=True,
+    # package_data={
+    #     'myapp': ['data/*.txt'],
+    # },
     # packages=find_namespace_packages(
     #     where='script',
     # ),
