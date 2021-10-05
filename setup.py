@@ -10,7 +10,7 @@ requirements = [
 
 setup(
     name='gerador_endereco',  # Nome (não precisa ser o nome do repositório, nem de qualquer pasta...)
-    version='1.0.1',
+    version='1.0.2',
     author='Michel Metran',
     author_email='michelmetran@gmail.com',
     description='API para criação de endereços aleatórios em um município específico',
