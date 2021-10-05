@@ -7,7 +7,7 @@ Programa para gerar endereços aleatórios d'um município para popular um banco
 ### Instalar
 
 ```python
-pip install git+https://github.com/open-dsa/gerador_endereco.git
+!pip install git+https://github.com/open-dsa/gerador_endereco.git
 ```
 
 ### Como usar?
@@ -29,14 +29,3 @@ get_random_complete_address(cep)
 ### Autor
 
 - [Michel Metran](https://michelmetran.github.io/)
-
-
-
-```python
-if __name__ == '__main__':
-    # Para testes apenas
-    listas = get_list_ceps_bairros(estado='sp', municipio='piracicaba')
-    end = get_random_complete_address(random.choice(listas[0]))
-    print(end)
-
-```

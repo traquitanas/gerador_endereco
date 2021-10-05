@@ -1,5 +1,4 @@
-from setuptools import setup, find_namespace_packages
-
+from setuptools import setup, find_namespace_packages, find_packages
 
 with open('README.md', 'r') as f:
     long_description = f.read()
@@ -19,9 +18,10 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/open-dsa/gerador_endereco',
-    packages=find_namespace_packages(
-        where='script',
-    ),
+    packages=find_packages(),
+    # packages=find_namespace_packages(
+    #     where='script',
+    # ),
     # package_dir={
     #     'script': 'random_address',
     # },
