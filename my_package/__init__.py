@@ -1,1 +1,1 @@
-from my_package import *
+from my_package.gerador_endereco import *
