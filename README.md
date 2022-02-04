@@ -34,7 +34,7 @@ listas = get_list_ceps_bairros(estado='sp', municipio='piracicaba')
 <br>
 
 2. Uma vez com essa lista de CEPs aleatórios, é possível obter o logradouro completo por meio da função.
- 
+
 ```python
 cep = random.choice(listas[0])
 get_random_complete_address(cep)
