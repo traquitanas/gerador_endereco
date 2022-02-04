@@ -4,7 +4,7 @@ from pycep_correios import get_address_from_cep, WebService
 
 
 #VERSION = (1, 0, 7, 'dev0')
-VERSION = (1, 0, 11)
+VERSION = (1, 0, 12)
 __version__ = '.'.join(map(str, VERSION))
 
 

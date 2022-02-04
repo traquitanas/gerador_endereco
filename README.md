@@ -58,4 +58,4 @@ Rua José Alexandre de Almeida, 291 - Água das Pedras - Piracicaba, SP - CEP: 1
 
 <br>
 
-Caso tenha interesse, há um [*Google Colab*](https://colab.research.google.com/drive/1fljRarvBgD9Lm3k3PO23a6m_E8Zd5kFL#scrollTo=3CyI_-0SbCPm) para testes.
+Caso tenha interesse, há um [*Google Colab*](https://colab.research.google.com/drive/1fljRarvBgD9Lm3k3PO23a6m_E8Zd5kFL?usp=sharing) para testes.
