@@ -2,13 +2,15 @@
 
 <br>
 
-Programa para gerar endereços aleatórios d'um município para popular um banco de dados.
+Programa para gerar endereços aleatórios de um município específico, com objetivo de popular bancos de dados.
 
 <br>
 
 ----
 
 ### Como Instalar?
+
+<br>
 
 ```bash
 pip install gerador-endereco --upgrade
@@ -20,20 +22,26 @@ pip install gerador-endereco --upgrade
 
 ### Como usar?
 
-1. Inicialmente é necessário gerar um conjunto/lista de CEPs únicos e aleatórios, definindo apenas a unidade da federação e nome do município.
+<br>
 
-Como resultado, são geradas duas listas: a primeira contendo CEPs e a segunda contendo bairros.
+Inicialmente é necessário gerar um conjunto/lista de CEPs únicos e aleatórios, definindo apenas a unidade da federação e nome do município. Como resultado, são geradas duas listas:
+
+1. A primeira lista contem CEPs;
+2. A segunda lista contem bairros.
 
 ```python
 import random
 from gerador_endereco import *
 
-listas = get_list_ceps_bairros(estado='sp', municipio='piracicaba')
+list_ceps, list_bairros = get_list_ceps_bairros(estado='sp', municipio='piracicaba')
+
+print(list_ceps[0:10])
+print(list_bairros[0:10])
 ```
 
 <br>
 
-2. Uma vez com essa lista de CEPs aleatórios, é possível obter o logradouro completo por meio da função.
+Uma vez com essa lista de CEPs aleatórios, é possível obter o logradouro completo por meio da função.
 
 ```python
 cep = random.choice(listas[0])
@@ -42,9 +50,12 @@ get_random_complete_address(cep)
 
 <br>
 
-----
+O resultado será um endereço aleatório, por exemplo:
 
-### Referências
+```python
+Rua José Alexandre de Almeida, 291 - Água das Pedras - Piracicaba, SP - CEP: 13404-206
+```
 
-- [**GitHub**: consulta_correios](https://github.com/arthurfortes/consulta_correios)
-- [**Medium**: Consultar Endereços e CEPs brasileiros utilizando python](https://fortes-arthur.medium.com/consultar-endereços-e-ceps-brasileiros-utilizando-python-9c8f14f4592)
+<br>
+
+Caso tenha interesse, há um [*Google Colab*](https://colab.research.google.com/drive/1fljRarvBgD9Lm3k3PO23a6m_E8Zd5kFL#scrollTo=3CyI_-0SbCPm) para testes.
