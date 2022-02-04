@@ -3,11 +3,12 @@ import requests
 from pycep_correios import get_address_from_cep, WebService
 
 
-#VERSION = (1, 0, 7, 'dev0')
-VERSION = (1, 0, 12)
+# Set Version
+VERSION = (1, 0, 13) #VERSION = (1, 0, 7, 'dev0')
 __version__ = '.'.join(map(str, VERSION))
 
 
+# Functions
 def get_list_ceps_bairros(estado='sp', municipio='piracicaba', loops=20):
     """
     Função que auxilia na definição de endereços aleatórios em uma cidade.
@@ -68,23 +69,31 @@ def get_random_complete_address(cep):
     end = get_address_from_cep(cep, webservice=WebService.VIACEP)
 
     # Adiciona um número aleatório
-    end['complemento'] = '{}'.format(random.randrange(1, 999))
+    end['numero'] = '{}'.format(random.randrange(1, 999))
 
     # Cria uma chave no dict com Endereço Completo
     end['endereco_completo'] = '{}, {} - {} - {}, {} - CEP: {}'.format(
         end['logradouro'],
-        end['complemento'],
+        end['numero'],
         end['bairro'],
         end['cidade'],
         end['uf'],
         end['cep'],
     )
     print('Endereço Aleatório:\n{}'.format(end['endereco_completo']))
-    return end['endereco_completo']
+    return {
+        'logradouro': end['logradouro'],
+        'numero': end['numero'],
+        'bairro': end['bairro'],
+        'cidade': end['cidade'],
+        'uf': end['uf'],
+        'cep': end['cep'],
+        'endereco_completo': end['endereco_completo'],
+    }
 
 
 if __name__ == '__main__':
     # Para testes apenas
     list_ceps, list_bairros = get_list_ceps_bairros(estado='sp', municipio='piracicaba')
-    end = get_random_complete_address(random.choice(list_ceps))
-    print(end)
+    dict_endereco = get_random_complete_address(random.choice(list_ceps))
+    print(dict_endereco)
