@@ -2,7 +2,7 @@
 
 <br>
 
-Programa para gerar endereços aleatórios de um município específico, com objetivo de popular bancos de dados.
+Programa para gerar endereços *fakes* aleatórios, definido apenas o município. Elabora visando popular um bancos de dados para um projeto realizado em um município específico.
 
 <br>
 
@@ -13,7 +13,7 @@ Programa para gerar endereços aleatórios de um município específico, com obj
 <br>
 
 ```bash
-pip install gerador-endereco --upgrade
+pip3 install gerador-endereco --upgrade
 ```
 
 <br>
@@ -30,7 +30,6 @@ Inicialmente é necessário gerar um conjunto/lista de CEPs únicos e aleatório
 2. A segunda lista contem bairros.
 
 ```python
-import random
 from gerador_endereco import *
 
 list_ceps, list_bairros = get_list_ceps_bairros(estado='sp', municipio='piracicaba')
@@ -53,9 +52,23 @@ get_random_complete_address(cep)
 O resultado será um endereço aleatório, por exemplo:
 
 ```python
-Rua José Alexandre de Almeida, 291 - Água das Pedras - Piracicaba, SP - CEP: 13404-206
+{'bairro': 'Nova Piracicaba',
+ 'cep': '13405-078',
+ 'cidade': 'Piracicaba',
+ 'endereco_completo': 'Praça Noêmia Godoy Leme, 121 - Nova Piracicaba - Piracicaba, SP - CEP: 13405-078',
+ 'logradouro': 'Praça Noêmia Godoy Leme',
+ 'numero': '121',
+ 'uf': 'SP'}
 ```
 
 <br>
 
 Caso tenha interesse, há um [*Google Colab*](https://colab.research.google.com/drive/1fljRarvBgD9Lm3k3PO23a6m_E8Zd5kFL?usp=sharing) para testes.
+
+<br>
+
+-----
+
+### *TODO*:
+
+1. Ajustar o *output* usando uma *OrderedDicts*;
