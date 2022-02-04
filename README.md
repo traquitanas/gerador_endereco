@@ -2,7 +2,7 @@
 
 <br>
 
-Programa para gerar endereços *fakes* aleatórios, definido apenas o município. Elabora visando popular um bancos de dados para um projeto realizado em um município específico.
+Programa para gerar endereços *fakes* aleatórios, definido apenas o município. Elaborado visando popular um bancos de dados para um projeto realizado em um município específico.
 
 <br>
 
@@ -49,7 +49,7 @@ get_random_complete_address(cep)
 
 <br>
 
-O resultado será um endereço aleatório, por exemplo:
+O resultado será um dicionário com um endereço aleatório, por exemplo:
 
 ```python
 {'bairro': 'Nova Piracicaba',
